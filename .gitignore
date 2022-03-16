@@ -1,0 +1,13 @@
+# macos
+.DS_Store
+
+# development/ide
+.idea
+.vscode
+.notes
+
+# scratchpad
+scratch
+
+# misc
+*.log
