@@ -1,0 +1,7 @@
+FROM debian:11-slim
+
+COPY entrypoint.sh /init/entrypoint.sh
+
+ENTRYPOINT [ "/init/entrypoint.sh" ]
+
+CMD ["echo ALL DONE!"]
