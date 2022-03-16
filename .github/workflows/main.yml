@@ -14,4 +14,8 @@ jobs:
 
       - name: List github workspace 
         run: ls -ltr /home/runner/work/actions-containerspace
+      
+      - name: List github workspace again
+        run: ls -ltr /github/workspace
+
 
