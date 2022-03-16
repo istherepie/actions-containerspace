@@ -13,7 +13,7 @@ jobs:
           password: ${{ secrets.CONTAINER_REGISTRY_TOKEN }}
 
   second_test:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Do more stuff...
     steps:
       - name: Enable the awesome action!
