@@ -12,6 +12,10 @@ jobs:
           username: ${{ secrets.CONTAINER_REGISTRY_USER }}
           password: ${{ secrets.CONTAINER_REGISTRY_TOKEN }}
 
+  second_test:
+   runs-on: ubuntu-latest
+    name: Do more stuff...
+    steps:
       - name: Enable the awesome action!
         id: enable_action
         uses: istherepie/actions-containerspace@master
