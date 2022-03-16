@@ -3,4 +3,4 @@ description: Testing the scope of container volumes during a workflow
 
 runs:
   using: docker
-  image: docker://debian:11-slim
+  image: docker://ghcr.io/istherepie/containerspacetest:0.0.1
