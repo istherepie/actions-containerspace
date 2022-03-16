@@ -3,4 +3,4 @@ description: Testing the scope of container volumes during a workflow
 
 runs:
   using: docker
-  image: docker.io/debian:11-slim
+  image: docker://debian:11-slim
