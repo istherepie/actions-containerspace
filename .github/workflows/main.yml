@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  first_test:
+    runs-on: ubuntu-latest
+    name: A job to test the action!
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: istherepie/actions-containerspace@master
+
+      - name: List FS
+        run: ls -ltr
