@@ -1,13 +1,13 @@
 on: [push]
 
 jobs:
-	first_test:
+  first_test:
     runs-on: ubuntu-latest
     name: A job to test the action!
     steps:
-		  - name: Enable the awesome action!
-		    id: enable_action
-		    uses: istherepie/actions-containerspace@master
+      - name: Enable the awesome action!
+        id: enable_action
+        uses: istherepie/actions-containerspace@master
 
       - name: Check working directory
         run: pwd
