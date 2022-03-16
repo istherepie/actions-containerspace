@@ -12,5 +12,6 @@ jobs:
       - name: Check working directory
         run: pwd
 
-      - name: List root fs
-        run: ls -ltr /
+      - name: List github workspace 
+        run: ls -ltr /home/runner/work/actions-containerspace
+
