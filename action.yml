@@ -1,0 +1,6 @@
+name: Actions Containerspace Test
+description: Testing the scope of container volumes during a workflow
+
+runs:
+  using: docker
+  image: debian:11-slim
