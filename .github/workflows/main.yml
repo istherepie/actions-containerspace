@@ -16,8 +16,8 @@ jobs:
       - name: Check working directory
         run: pwd
 
-      - name: List github home directory
-        run: ls -ltr /home/runner/work/_temp/_github_home
+      - name: List github workspace directory
+        run: ls -ltr /github/workspace
       
       - name: Echo readme
         run: cat README.md
