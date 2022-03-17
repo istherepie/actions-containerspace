@@ -20,9 +20,6 @@ jobs:
 
       - name: Check working directory
         run: pwd
-
-      - name: List github directory
-        run: ls -ltr /github
       
       - name: Echo readme
         run: cat README.md
