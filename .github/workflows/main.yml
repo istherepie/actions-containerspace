@@ -2,9 +2,14 @@ on: [push]
 
 jobs:
   first_test:
-    runs-on: ubuntu-latest
     name: A job to test the action!
     environment: testing
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ github.workspace }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -16,8 +21,8 @@ jobs:
       - name: Check working directory
         run: pwd
 
-      - name: List github workspace directory
-        run: ls -ltr /github/workspace
+      - name: List github directory
+        run: ls -ltr /github
       
       - name: Echo readme
         run: cat README.md
