@@ -4,11 +4,8 @@ inputs:
   directory:
     description: Directory/Path to list
     required: true
-  outputs:
-    result:
-      description: The output of the executed command (within the container)
 runs:
   using: docker
   image: docker://istherepie/containerspacetest:0.0.6
   args:
-      - ${{ inputs.directory }}
+    - ${{ inputs.directory }}

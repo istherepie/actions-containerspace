@@ -20,9 +20,6 @@ jobs:
         with:
           directory: /usr/bin
 
-      - name: Check the output of the executed command
-        run: echo "The time was ${{ steps.enable_action.outputs.result }}"
-
       - name: Check working directory
         run: pwd
       
