@@ -1,6 +1,14 @@
 name: Actions Containerspace Test
 description: Testing the scope of container volumes during a workflow
-
+inputs:
+  directory:
+    description: Directory/Path to list
+    required: true
+  outputs:
+    result:
+      description: The output of the executed command (within the container)
 runs:
   using: docker
-  image: docker://istherepie/containerspacetest:0.0.5
+  image: docker://istherepie/containerspacetest:0.0.6
+  args:
+      - ${{ inputs.directory }}
