@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 
-echo "Checking the github workspace!"
-ls /github/workspace
+DIR=$1
 
-echo "Checking the github directory!"
-ls /github
+echo "List specified directory!"
+
+RESULT=$(ls $DIR)
+
+echo "::set-output name=result::${RESULT}"
