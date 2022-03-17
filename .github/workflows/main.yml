@@ -18,7 +18,7 @@ jobs:
         id: enable_action
         uses: istherepie/actions-containerspace@master
         with:
-          directory: ${{ github.workspace }}/container
+          directory: ./container
 
       - name: Check working directory
         run: pwd
