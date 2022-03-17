@@ -17,6 +17,11 @@ jobs:
       - name: Enable the awesome action!
         id: enable_action
         uses: istherepie/actions-containerspace@master
+        with:
+          directory: /usr/bin
+
+      - name: Check the output of the executed command
+        run: echo "The time was ${{ steps.enable_action.outputs.result }}"
 
       - name: Check working directory
         run: pwd
