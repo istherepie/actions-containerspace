@@ -3,4 +3,4 @@ description: Testing the scope of container volumes during a workflow
 
 runs:
   using: docker
-  image: docker://istherepie/containerspacetest:0.0.3
+  image: docker://istherepie/containerspacetest:0.0.4
