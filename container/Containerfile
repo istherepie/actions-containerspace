@@ -4,4 +4,4 @@ COPY entrypoint.sh /init/entrypoint.sh
 
 ENTRYPOINT [ "/init/entrypoint.sh" ]
 
-CMD ["echo ALL DONE!"]
+CMD ["echo", "ALL DONE!"]
